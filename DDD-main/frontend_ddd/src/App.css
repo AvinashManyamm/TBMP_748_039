@@ -1,0 +1,173 @@
+/* Body styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  background-image: url('bgg.jpg'); /* Set the background image */
+  background-size: cover;           /* Ensure the image covers the whole page */
+  background-position: center;      /* Center the background image */
+  background-attachment: fixed;     /* Make the background fixed during scroll */
+  background-repeat: no-repeat;     /* Prevent repeating the background image */
+}
+
+/* Container for all elements */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Camera Section */
+.camera-section {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.camera-placeholder {
+  width: 1100px; /* Set the camera placeholder to match the camera dimensions */
+  height: 600px; /* Set the camera placeholder to match the camera dimensions */
+  border: 2px dashed #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.webcam {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensure the webcam fits within the placeholder */
+}
+
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Button container with proper spacing */
+.button-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Button styles */
+.sos-button,
+.start-camera-button,
+.stop-camera-button {
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.sos-button {
+  background-color: #ff4d4d;
+  color: #fff;
+}
+
+.sos-button:hover {
+  background-color: #ff1a1a;
+}
+
+.start-camera-button,
+.stop-camera-button {
+  background-color: #4d90fe;
+  color: #fff;
+}
+
+.start-camera-button:hover,
+.stop-camera-button:hover {
+  background-color: #357ae8;
+}
+
+/* Logsheet Section */
+.logsheet-section {
+  flex: 1;
+  margin-left: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  height: 90%;
+  overflow-y: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logsheet-section h2 {
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.logsheet {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.logsheet li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  color: #555;
+}
+
+.logsheet li:last-child {
+  border-bottom: none;
+}
+
+/* Download Log button */
+.download-button {
+  background-color: #4CAF50;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+}
+
+.download-button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .camera-section,
+  .logsheet-section {
+    flex: none;
+    width: 100%;
+    margin: 0;
+    height: auto;
+  }
+
+  .camera-placeholder {
+    height: 60vh;
+  }
+}

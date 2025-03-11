@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+
+
+.fullDDD{
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  background-image: url('https://i.pinimg.com/736x/4f/37/ed/4f37edb2b4a0fad8dc01c34b5a39d681.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 390px;
+  padding-top: 8px;
+}
+  
+
+.drowsiness-detector h1{
+  font-size: 55px;
+  margin-top: 80px;
+  margin-bottom: 90px;
+  font-family: "Afacad Flux", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+  p {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .log-box {
+    margin-top: 40px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 35px;
+    background-color: rgb(229, 228, 228);
+    max-height: 300px;
+    overflow-y: auto;
+    width: 50%;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .log-box h3 {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .log-box ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .log-box li {
+    font-size: 16px;
+    padding: 5px 0;
+  }
+  
+
+  /* From Uiverse.io by alexroumi */ 
+.sosbutton {
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: #212121;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms;
+  overflow: hidden;
+  margin-right:20px;
+  margin-bottom: 30px;
+
+ }
+ 
+ .sosbutton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background: linear-gradient(144deg,#af40ff,#5b42f3 50%,#00ddeb);
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms
+ }
+ 
+ .sosbutton:hover {
+  color: #e8e8e8;
+ }
+ 
+ .sosbutton:hover::before {
+  width: 100%;
+ }
+
+
+ /* From Uiverse.io by alexroumi */ 
+.yesosbutton {
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: #212121;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms;
+  overflow: hidden;
+ }
+ 
+ .yesosbutton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: red;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms
+ }
+ 
+ .yesosbutton:hover {
+  color: #e8e8e8;
+ }
+ 
+ .yesosbutton:hover::before {
+  width: 100%;
+ }
+
+
+
+
+ /* From Uiverse.io by G4b413l */ 
+.buttonDownload {
+  display: inline-block;
+  position: relative;
+  padding: 10px 25px;
+  background-color: blue;
+  color: white;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 0.9em;
+  text-align: center;
+  text-indent: 15px;
+  border: none;
+  border-radius: 16px;
+  margin-top: 30px;
+ }
+ 
+ .buttonDownload:hover {
+  background-color: #45a21a;
+  color: white;
+ }
+ 
+ .buttonDownload:before, .buttonDownload:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 15px;
+  top: 52%;
+ }
+ 
+ .buttonDownload:before {
+  width: 10px;
+  height: 2px;
+  border-style: solid;
+  border-width: 0 2px 2px;
+ }
+ 
+ .buttonDownload:after {
+  width: 0;
+  height: 0;
+  margin-left: 3px;
+  margin-top: -7px;
+  border-style: solid;
+  border-width: 4px 4px 0 4px;
+  border-color: transparent;
+  border-top-color: inherit;
+  animation: downloadArrow 1s linear infinite;
+  animation-play-state: paused;
+ }
+ 
+ .buttonDownload:hover:before {
+  border-color: #cdefbd;
+ }
+ 
+ .buttonDownload:hover:after {
+  border-top-color: #cdefbd;
+  animation-play-state: running;
+ }
+ 
+ @keyframes downloadArrow {
+  0% {
+   margin-top: -7px;
+   opacity: 1;
+  }
+ 
+  0.001% {
+   margin-top: -15px;
+   opacity: 0.4;
+  }
+ 
+  50% {
+   opacity: 1;
+  }
+ 
+  100% {
+   margin-top: 0;
+   opacity: 0.4;
+  }
+ }
